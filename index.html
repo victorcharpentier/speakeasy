@@ -1,18 +1,31 @@
-<body>
-<select id="langSelect">
-  <option value="EN">Anglais</option>
-  <option value="FR">Français</option>
-  <option value="ES">Espagnol</option>
-</select>
-
-<div class="bouton">
-  <label for="onoff">On/Off :</label>
-  <input type="checkbox" id="onoff" name="onoff">
-</div>
-
-<div id="resultat"></div>
-<div id="resultatTraduit"></div>
-<div id="message"></div>  
-  
-  <script src="script.js"></script>
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mon interface utilisateur</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <h2>Options</h2>
+        <div class="input">
+          <label for="langSelect">Language :</label>
+          <select id="langSelect">
+            <option value="FR">French</option>
+            <option value="ES">Spanish</option>
+          </select>
+        </div>
+        <div class="input">
+          <label for="onoff">Enable :</label>
+          <input type="checkbox" id="onoff" name="onoff">
+        </div>
+      </div>
+      <div class="output">
+        <h2>Results</h2>
+        <div id="resultat"></div>
+        <div id="resultatTraduit"></div>
+        <div id="message"></div>
+      </div>
+    </div>
+  </body>
+</html>
