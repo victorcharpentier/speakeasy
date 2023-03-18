@@ -15,8 +15,8 @@ recognition.continuous = true;
 recognition.interimResults = true;
 
 recognition.onstart = () => {
-  console.log("Enregistrement en cours...");
-  document.getElementById("message").innerText = "Enregistrement en cours...";
+  console.log("Recording...");
+  document.getElementById("message").innerText = "Recording...";
   isRecording = true;
 };
 
